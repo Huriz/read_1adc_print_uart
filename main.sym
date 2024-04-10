@@ -1,0 +1,97 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+013     CCP_1
+013     CCP_1_LOW
+014     CCP_1_HIGH
+019.6   C1OUT
+020     @SCRATCH
+021     @SCRATCH
+021     _RETURN_
+022     @SCRATCH
+023     @SCRATCH
+025-026 MAIN.AdValue
+027     MAIN.channel
+028-02B MAIN.Res_ADC_Val
+02C     MAIN.V
+02D-030 @PRINTF_L32D_539FPFPF.P1
+02D-02E @ITOF.P2
+02D     @delay_ms1.P3
+02D-02E @PRINTF_LU_539.P4
+02D     MAIN.@SCRATCH1
+02F     @PRINTF_LU_539.@SCRATCH1
+030     @PRINTF_LU_539.@SCRATCH2
+031     @PRINTF_L32D_539FPFPF.P1
+031     @PRINTF_LU_539.@SCRATCH3
+032     @PRINTF_LU_539.@SCRATCH4
+032     @PRINTF_L32D_539FPFPF.@SCRATCH1
+033     @PRINTF_LU_539.@SCRATCH5
+033     @PRINTF_L32D_539FPFPF.@SCRATCH2
+034     @PRINTF_LU_539.@SCRATCH6
+034     @PRINTF_L32D_539FPFPF.@SCRATCH3
+035     @PRINTF_L32D_539FPFPF.@SCRATCH4
+036     @PRINTF_L32D_539FPFPF.@SCRATCH5
+037     @PRINTF_L32D_539FPFPF.@SCRATCH6
+038-03B @DIV3232.P1
+038-03B @MULFF.P2
+038-03B @FTOSD.P3
+038     @PUTCHAR_1_.P4
+03C-03F @DIV3232.P1
+03C-03F @MULFF.P2
+03C     @FTOSD.@SCRATCH1
+040     @MULFF.@SCRATCH1
+040     @DIV3232.@SCRATCH1
+041     @MULFF.@SCRATCH2
+041     @DIV3232.@SCRATCH2
+042     @MULFF.@SCRATCH3
+042     @DIV3232.@SCRATCH3
+043     @MULFF.@SCRATCH4
+043     @DIV3232.@SCRATCH4
+044     @MULFF.@SCRATCH5
+044     @DIV3232.@SCRATCH5
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  @const558.call
+000012  setup
+000040  @ITOF
+00005D  @MULFF
+0000D2  @PUTCHAR_1_
+0000F4  @PRINTF_LU_539
+00014C  @DIV3232
+00019A  @PRINTF_L32D_539FPFPF
+0001C1  @FTOSD
+000279  @delay_ms1
+00028C  MAIN
+00028C  @cinit1
+00029F  @cinit2
+
+Project Directory:
+    C:\Users\Huriz\Documents\lector ADC\v2\
+
+Project Files:
+    main.c                                                  [08-Apr-24 09:39  CRC=8EC6F441]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\12F683.h [12-Nov-13 14:34  CRC=91F6F178]
+
+Source signature=B2B4D731
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC12F683
+    Pointer Size:   8
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
